@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row" style="background-color: rgb(164, 180, 202);">
+    <div class="col-10">
+      <!-- <h2>List of available books in the library</h2> -->
+      <h3>User Dashboard</h3>
+    </div>
+    <div class="col-1 justify-content-end">
+      <a routerLink="/login"><button class="btn btn-danger">Logout</button></a>
+    </div>
+  </div>
+  <div class="">
+    <table class="table table-hover table-striped" style="margin-top: 17px">
+      <thead>
+        <tr>
+          <th scope="col" class="text-center">ID</th>
+          <th scope="col" class="text-center">Name</th>
+          <th scope="col" class="text-center">Author</th>
+          <th scope="col" class="text-center">Price</th>
+          <th scope="col" class="text-center">Available</th>
+          <th scope="col" class="text-center">ReserveBook</th>
+          <th scope="col" class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of booksList; let i = index">
+          <td class="text-center">{{ i + 1 }}</td>
+          <td class="text-center">{{ book.name }}</td>
+          <td class="text-center">{{ book.author }}</td>
+          <td class="text-center">{{ book.price }}</td>
+          <td class="text-center">
+            <ng-container *ngIf="book.available; else elseBlock">
+              Available
+            </ng-container>
+            <ng-template #elseBlock> Unavailable </ng-template>
+
+            <!-- <ng-container *ngIf="isAvailable !== isAvailable(book.id)">
+              Unavailable
+            </ng-container> -->
+          </td>
+          <td class="text-center">
+            <button
+              (click)="borrowBook(book.id)"
+              [disabled]="!book.available"
+              class="btn btn-sm btn-success"
+            >
+              Booking
+            </button>
+          </td>
+          <td class="text-center">
+            <button
+              (click)="borrowBook(book.id)"
+              [disabled]="!book.available"
+              class="btn btn-sm btn-success mx-1"
+            >
+              Borrow
+            </button>
+            <button (click)="returnBook(book.id)" class="btn btn-sm btn-danger">
+              Return
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

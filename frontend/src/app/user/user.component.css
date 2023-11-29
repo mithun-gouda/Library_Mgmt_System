@@ -1,0 +1,74 @@
+.container-fluid {
+    /* background-color:rgb(127, 127, 134); */
+    background-color: rgb(194, 207, 211);
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+
+btn.btn-outline-success {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.navbar button:hover{
+    background-color: #08090a;
+    color: #fff;
+}
+.navbar button{
+    background-color: #d4e3e6;
+    color: #0e0d0d;
+}
+.btn-outline-success:hover {
+    background-color: #218838; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #08090a;
+}
+
+
+li a[routerLink="/login"] {
+    text-decoration: none; 
+    background-color: #e00e20; 
+    color: #fff; 
+    padding: 5px 10px;
+    border-radius: 5px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  
+  li a[routerLink="/login"]:hover {
+    background-color: hsl(4, 100%, 63%); 
+  }
+  
+
+
+

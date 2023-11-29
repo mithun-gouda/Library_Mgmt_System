@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Set your desired background color */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-container::before {
+    content: "";
+    background-image: url('/assets/pngtree-blue-abstract-background-business-picture-image_1328234.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-form {
+    max-width: 400px;
+    padding: 20px; /* Adjust padding to your preference */
+    background-color: rgba(236, 237, 243, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: rgb(8, 5, 5);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #0588df;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #070707;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.form-group {
+    position: relative;
+}
+
+#password {
+    padding-right: 30px;
+}
+
+#togglePassword {
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-container::before {
+    content: "";
+    background-image: url('/assets/pngtree-blue-abstract-background-business-picture-image_1328234.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.login-form {
+    max-width: 400px;
+    padding: 20px; 
+    background-color: rgba(236, 237, 243, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #0588df;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #070707;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.form-group {
+    position: relative;
+}
+
+#password {
+    padding-right: 30px;
+}
+
+#togglePassword {
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+} */

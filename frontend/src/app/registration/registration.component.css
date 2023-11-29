@@ -1,0 +1,83 @@
+.form-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container::before {
+  content: "";
+  background-image: url('/assets/pngtree-blue-abstract-background-business-picture-image_1328234.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+ .registration-form {
+    max-width: 400px; 
+    padding: 60px;
+    background-color: rgba(236, 237, 243, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+   
+}   
+
+
+h1 {
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+
+button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #0588df;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+.form-group {
+    position: relative;
+  }
+  
+  #password {
+    padding-right: 30px; 
+  }
+  .custom-dropdown {
+    position: relative;
+  }
+  
+  .custom-dropdown .form-control {
+    padding-right: 32px; 
+  }
+  
+  .custom-dropdown .dropdown-icon {
+    position: absolute;
+    top: 70%;
+    right: 10px; 
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+  .button-container {
+    text-align: right; /* Align the button to the right side */
+    margin-top: 5px; /* Add some top margin for spacing */
+  }
+  .send-otp-button {
+    background-color: #4187d1; 
+    color: #fff; 
+    border: none; 
+    border-radius: 3px; 
+    padding: 5px 5px; 
+    cursor: pointer; 
+  }
+ 
+  
